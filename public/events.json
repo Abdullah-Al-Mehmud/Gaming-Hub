@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "category": "Event Tickets",
+    "events": [
+      {
+        "id": 1,
+        "name": "Single-Day Pass",
+        "image": "single_day_pass.jpg",
+        "price": "$49.99",
+        "description": "Enjoy a thrilling day of gaming excitement with our Single-Day Pass. Gain access to the convention center, where you can explore the latest gaming trends, participate in epic tournaments, attend informative panel discussions, and connect with fellow gamers. Don't miss out on this one-day gaming extravaganza!",
+        "detail_description": "Our Single-Day Pass provides you with a full day of gaming goodness. From the moment you step into the convention, you'll be immersed in a world of gaming excellence. Attendees can try out the latest game releases, meet industry influencers, and engage in friendly competitions. Whether you're a casual gamer or a hardcore enthusiast, this pass is your ticket to a day of unforgettable gaming experiences.\n\n**What's Included:**\n- Access to the convention center for one full day\n- Participation in gaming tournaments\n- Entry to panel discussions and workshops\n- Networking opportunities with industry professionals\n- Exclusive access to demo games and new releases\n- Chance to win prizes in various gaming contests\n\n**Additional Information:**\n- Children under 12 enter for free with a paying adult\n- Passes can be purchased at the event or online in advance\n- Limited VIP upgrades available for an enhanced experience"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "category": "Gaming Tournaments",
+    "events": [
+      {
+        "id": 2,
+        "name": "FIFA 2023 Tournament",
+        "image": "fifa_tournament.jpg",
+        "price": "$20.00",
+        "description": "Compete against the best FIFA players in our highly anticipated FIFA 2023 Tournament. Showcase your skills, strategize your plays, and aim for victory. With cash prizes, gaming gear, and the glory of being crowned champion, this tournament is a must for any serious FIFA enthusiast.",
+        "detail_description": "Our FIFA 2023 Tournament is a thrilling showcase of gaming talent. Whether you're a seasoned FIFA pro or a rising star, this tournament welcomes players of all skill levels. Compete in a competitive yet friendly environment, learn from your matches, and strive for the top spot. The grand prize includes cash rewards, exclusive gaming peripherals, and the ultimate bragging rights as the FIFA 2023 Champion.\n\n**What's Included:**\n- Entry to the FIFA 2023 Tournament\n- Access to gaming stations and equipment\n- Chance to win cash prizes and gaming gear\n- Skill-based matchmaking for fair competition\n- Professional referees and judging\n\n**Additional Information:**\n- Tournament registration is open to players aged 13 and above\n- Limited spots available, so register early to secure your spot\n- Registration fee covers entry to the tournament"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "category": "Virtual Reality Experiences",
+    "events": [
+      {
+        "id": 3,
+        "name": "VR Gaming Zone",
+        "image": "game_dev_workshop.jpg",
+        "price": "$30.00",
+        "description": "Step into a world of immersive gaming with our VR Gaming Zone. Explore fantastical realms, battle fierce opponents, and experience gaming like never before.",
+        "detail_description": "Our VR Gaming Zone offers an unparalleled experience for gamers looking to dive into the world of virtual reality. Strap on a VR headset and be transported to stunning virtual worlds where you can engage in epic battles, solve challenging puzzles, and embark on thrilling adventures. Whether you're a VR veteran or a first-time explorer, our diverse selection of VR games and experiences caters to all skill levels. Our expert staff will guide you through the setup and ensure a safe and thrilling VR journey.\n\n**What's Included:**\n- Access to a wide range of VR games and experiences\n- VR headset and equipment provided\n- Knowledgeable staff for assistance and guidance\n- Safe and comfortable VR gaming environment\n- Multiplayer options for cooperative and competitive play\n\n**Additional Information:**\n- VR experiences suitable for ages 12 and above\n- Sessions can be booked in advance or on-site\n- Discounts available for group bookings\n- Limited availability, so reserve your spot early for a truly immersive adventure."
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "category": "Arcade and Retro Gaming Zone",
+    "events": [
+      {
+        "id": 4,
+        "name": "Classic Arcade Tournament",
+        "image": "cosplay_contest.jpg",
+        "price": "Free",
+        "description": "Step back in time and compete in our Classic Arcade Tournament. Challenge your friends and fellow attendees in a battle for high scores on timeless arcade classics.",
+        "detail_description": "Our Arcade and Retro Gaming Zone is a haven for nostalgia enthusiasts. The Classic Arcade Tournament invites you to experience the magic of vintage arcade games once more. Gather your friends, put your skills to the test, and see who reigns supreme in games like Pac-Man, Space Invaders, and Donkey Kong. With a range of authentic arcade cabinets and classic consoles, you'll be transported to the heyday of gaming.\n\n**What's Included:**\n- Access to a variety of classic arcade games\n- Competitive tournaments with prizes\n- Retro gaming consoles for multiplayer fun\n- High-score challenges and leaderboards\n- Gaming museum showcasing gaming history\n\n**Additional Information:**\n- Suitable for gamers of all ages\n- Tokens or tickets may be required for certain arcade games\n- Tournaments may have entry fees with cash prizes\n- Exclusive retro gaming merchandise available for purchase\n- Gaming historians on hand to share insights and stories"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "category": "Exhibition Booths",
+    "events": [
+      {
+        "id": 5,
+        "name": "Gamer's Paradise Booth",
+        "image": "gamers_paradise_booth.jpg",
+        "price": "Varies",
+        "description": "At the Gamer's Paradise Booth, explore a veritable treasure trove of gaming delights. From cutting-edge hardware to exclusive merchandise, this is your chance to stock up on all things gaming. Dive into the world of collectibles, discover limited-edition releases, and engage with passionate exhibitors.",
+        "detail_description": "The Gamer's Paradise Booth is a haven for gamers of all kinds. Explore a sprawling showcase of the latest and greatest in gaming technology, collectibles, and merchandise. Immerse yourself in the world of gaming culture, discover hidden gems, and connect with fellow enthusiasts. Whether you're looking for gaming hardware, rare collectibles, or exclusive merchandise, our exhibitors have you covered. Dive into a world of gaming paradise!\n\n**What's Included:**\n- Access to the Gamer's Paradise Booth\n- Exclusive discounts on gaming products\n- Meet-and-greet opportunities with game developers\n- Limited-edition merchandise releases\n- Collectible giveaways and swag\n\n**Additional Information:**\n- Booths accept both cash and card payments\n- Prices for merchandise vary by vendor\n- Don't forget to bring a tote bag to carry your gaming haul"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "category": "Live Game Streaming Arena",
+    "events": [
+      {
+        "id": 6,
+        "name": "Pro Gamer Showdown",
+        "image": "meet_and_greet.jpg",
+        "price": "$25.00",
+        "description": "Witness intense gaming battles in our Live Game Streaming Arena. Top professional gamers will face off in thrilling matches, and you'll have a front-row seat to all the action.",
+        "detail_description": "Our Live Game Streaming Arena is where the excitement of eSports comes to life. The Pro Gamer Showdown features top-tier professional gamers competing in a variety of popular titles. Whether it's heart-pounding shooter games or strategic MOBAs, you'll experience the thrill of competitive gaming like never before.\n\n**What's Included:**\n- Live streaming of professional eSports matches\n- Meet and greet with renowned gamers\n- Exclusive behind-the-scenes access\n- Interactive sessions and Q&A with players\n- Opportunities to win prizes and swag\n\n**Additional Information:**\n- Scheduled matches and player lineups will be announced in advance\n- Attendees can participate in live audience polls and giveaways\n- Limited VIP packages available for premium experiences\n- Suitable for gamers of all ages and skill levels\n- Don't miss your chance to witness eSports history in the making!"
+      }
+    ]
+  }
+]
