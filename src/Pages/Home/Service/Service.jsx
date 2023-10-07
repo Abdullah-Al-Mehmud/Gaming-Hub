@@ -21,6 +21,7 @@ const Service = ({ eventsItems }) => {
             : events[0].description}
           .....
         </p>
+        <p className="mt-4 text-lg font-bold">Price : {events[0].price}</p>
         <div className="card-actions justify-center">
           <Link to={`/service/${id}`}>
             <button className=" px-6 py-2 flex  items-center gap-1 text-white rounded-lg bg-[#ff007f] mt-4">

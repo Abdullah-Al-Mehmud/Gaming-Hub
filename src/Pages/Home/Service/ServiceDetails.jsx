@@ -19,8 +19,14 @@ const ServiceDetails = ({ eventDetails }) => {
         />
       </div>
       <div className="my-20 lg:px-0 px-5 text-xl text-white font-semibold">
+        <h1 className="text-center mb-10 text-[#ff007f] text-4xl">
+          {category}
+        </h1>
         <p>{events[0].description}</p>
         <p className="mt-4">{events[0].detail_description}</p>
+        <p className="text-center mt-10 text-xl font-bold">
+          Price : {events[0].price}
+        </p>
         <div className="flex justify-center">
           <Link to="/">
             <button className=" px-6 py-2 flex text-lg  items-center gap-1 text-white rounded-lg bg-[#ff007f] mt-10">
