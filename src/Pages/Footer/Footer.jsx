@@ -33,10 +33,10 @@ const Footer = () => {
           />
         </div>
       </div>
-      <hr className="w-96 h-1 mx-auto mt-4 bg-white border-0 rounded md:my-10 "></hr>
-      <p className="text-center font-bold text-white">
+      <hr className="w-96 h-1 mx-auto mt-4 bg-[#ff007f] border-0 rounded md:my-10 "></hr>
+      <p className="text-center font-bold text-white px-20 md:mt-0 mt-3">
         Copyright © 2023 - All right reserved by{" "}
-        <span className="text-[#ff007f]">ACME Industries Ltd</span>
+        <span className="text-white">ACME Industries Ltd</span>
       </p>
     </div>
   );
