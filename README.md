@@ -4,8 +4,7 @@ This template provides a minimal setup to get React working in Vite with HMR and
 
 Currently, two official plugins are available:
 
-# [Gaming Hub]
-[Visit Website](https://gaming-hub-3abc5.web.app/) 
+# [Gaming Hub](https://gaming-hub-3abc5.web.app/)
 
 # Project Features
 - You can Login and Register in our website
