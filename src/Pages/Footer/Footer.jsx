@@ -1,6 +1,12 @@
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 const Footer = () => {
+  useEffect(() => {
+    Aos.init();
+  }, []);
   return (
-    <div className="bg-[#0b0114] py-16">
+    <div data-aos="fade-up" className="bg-[#0b0114] py-16">
       <div>
         <div className="flex justify-center">
           <img

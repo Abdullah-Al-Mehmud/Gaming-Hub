@@ -6,16 +6,18 @@ import { BiShowAlt, BiHide } from "react-icons/bi";
 import Swal from "sweetalert2";
 
 const Register = () => {
-  const { createUser, googleLogIn } = useContext(AuthContext);
-  const [success, setSuccess] = useState("");
+  const { createUser, updateEmailProfile } = useContext(AuthContext);
   const [error, setError] = useState("");
   const navigate = useNavigate(null);
   const [show, setShow] = useState(false);
+  // const [name, setName] = useState("");
 
   const handleCreateUser = (e) => {
     e.preventDefault();
     const email = e.target.email.value;
     const password = e.target.password.value;
+    const name = e.target.name.value;
+    // setName(name);
     // console.log(email, password);
 
     if (!/[^a-zA-Z0-9]/.test(password)) {
@@ -35,18 +37,14 @@ const Register = () => {
         console.log(result.user);
         Swal.fire("Registration Successful!", "success");
         e.target.reset();
+        // updateEmailProfile(name)
+        //   .then(() => {
+        //     Swal.fire("Update Successful!", "success");
+        //   })
+        //   .catch();
         navigate("/");
       })
       .catch((error) => setError(error.code));
-  };
-
-  const handleGoogleLogIn = () => {
-    googleLogIn()
-      .then((result) => {
-        console.log(result.user);
-        navigate("/");
-      })
-      .catch();
   };
 
   return (
@@ -64,6 +62,18 @@ const Register = () => {
                 <div className="form-control">
                   <label className="label">
                     <span className="label-text text-white font-bold">
+                      Your Name
+                    </span>
+                  </label>
+                  <input
+                    type="text"
+                    placeholder="Enter your Name"
+                    className="input text-[#ff007f] input-bordered bg-base-200 border-none outline-none text-sm font-bold"
+                    required
+                    name="text"
+                  />
+                  <label className="label">
+                    <span className="label-text mt-4 text-white font-bold">
                       Email address
                     </span>
                   </label>
@@ -111,10 +121,10 @@ const Register = () => {
                   </button>
                 </div>
                 <div className="mt-4">
-                  {success ? (
-                    <p className="font-bold text-green-500">{success}</p>
-                  ) : (
+                  {error ? (
                     <p className="font-bold text-red-500">{error}</p>
+                  ) : (
+                    ""
                   )}
                 </div>
                 <div className="text-center mt-4">
@@ -124,12 +134,6 @@ const Register = () => {
                       Login
                     </Link>
                   </p>
-                </div>
-                <div className="flex justify-center mt-4">
-                  <img
-                    onClick={handleGoogleLogIn}
-                    src="../../../public/images/google.png"
-                    className="w-10"></img>
                 </div>
               </form>
             </div>

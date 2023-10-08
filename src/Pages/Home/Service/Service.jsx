@@ -1,11 +1,17 @@
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const Service = ({ eventsItems }) => {
+  useEffect(() => {
+    Aos.init();
+  }, []);
   const { id, category, events } = eventsItems;
 
   return (
-    <div className="card text-center rounded-lg ">
+    <div className="card text-center rounded-lg " data-aos="fade-up">
       <figure>
         <img
           className="h-60 w-fit rounded-lg"

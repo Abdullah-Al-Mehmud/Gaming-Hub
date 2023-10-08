@@ -1,7 +1,14 @@
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
+
 const AboutUs = () => {
+  useEffect(() => {
+    Aos.init();
+  }, []);
   return (
-    <div>
-      <h1 className="text-white font-bold text-5xl text-center pt-14 pb-20">
+    <div data-aos="fade-up">
+      <h1 className="text-white font-bold text-5xl text-center  pb-20">
         About <span className="text-[#ff007f]">Us</span>
       </h1>
       <div className="md:flex  py-10 gap-10">
