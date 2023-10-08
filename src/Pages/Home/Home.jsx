@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import HeroSection from "../HeroSection/HeroSection";
 import Service from "./Service/Service";
+import AboutUs from "./AboutUs/AboutUs";
 
 const Home = () => {
   const [services, setServices] = useState([]);
@@ -25,6 +26,8 @@ const Home = () => {
           ))}
         </div>
       </div>
+
+      <AboutUs></AboutUs>
     </div>
   );
 };

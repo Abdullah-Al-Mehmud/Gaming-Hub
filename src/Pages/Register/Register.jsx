@@ -3,6 +3,7 @@ import Navbar from "../Navbar/Navbar";
 import { useContext, useState } from "react";
 import { AuthContext } from "../../Providers/AuthProviders";
 import { BiShowAlt, BiHide } from "react-icons/bi";
+import Swal from "sweetalert2";
 
 const Register = () => {
   const { createUser, googleLogIn } = useContext(AuthContext);
@@ -32,7 +33,7 @@ const Register = () => {
     createUser(email, password)
       .then((result) => {
         console.log(result.user);
-        setSuccess("Registration Successful !!");
+        Swal.fire("Registration Successful!", "success");
         e.target.reset();
         navigate("/");
       })

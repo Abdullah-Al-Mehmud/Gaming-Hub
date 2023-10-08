@@ -2,10 +2,11 @@ import { Link, useNavigate } from "react-router-dom";
 import Navbar from "../Navbar/Navbar";
 import { useContext, useState } from "react";
 import { AuthContext } from "../../Providers/AuthProviders";
+import Swal from "sweetalert2";
 
 const Login = () => {
   const { logInUser } = useContext(AuthContext);
-  const [success, setSuccess] = useState("");
+
   const [error, setError] = useState("");
   const navigate = useNavigate("");
 
@@ -17,11 +18,13 @@ const Login = () => {
     // login user
     logInUser(email, password)
       .then(() => {
-        setSuccess("Login Successful !!");
+        Swal.fire("LogIn Successful!", "success");
         e.target.reset();
         navigate("/");
       })
-      .catch((error) => setError(error.message));
+      .catch((error) => {
+        setError(error.code);
+      });
   };
 
   return (
@@ -75,9 +78,9 @@ const Login = () => {
                   <button className="btn bg-[#ff007f] text-white">Login</button>
                 </div>
                 {success ? (
-                  <p className="font-bold text-green-500">{success}</p>
+                  <p className="font-bold mt-4 text-green-500">{success}</p>
                 ) : (
-                  <p className="font-bold text-red-500">{error}</p>
+                  <p className="font-bold mt-4 text-red-500">{error}</p>
                 )}
                 <div className="text-center mt-4">
                   <p className="font-bold text-white">
