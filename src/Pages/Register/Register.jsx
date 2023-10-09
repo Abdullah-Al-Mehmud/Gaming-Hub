@@ -37,11 +37,12 @@ const Register = () => {
         console.log(result.user);
         Swal.fire("Registration Successful!", "success");
         e.target.reset();
-        // updateEmailProfile(name)
-        //   .then(() => {
-        //     Swal.fire("Update Successful!", "success");
-        //   })
-        //   .catch();
+        updateEmailProfile(name)
+          .then(() => {
+            Swal.fire("Update Successful!", "success");
+          })
+          .catch();
+
         navigate("/");
       })
       .catch((error) => setError(error.code));

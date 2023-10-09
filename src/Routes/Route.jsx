@@ -2,11 +2,12 @@ import { createBrowserRouter } from "react-router-dom";
 import Root from "../Layout/Root";
 import Error from "../Pages/Error/Error";
 import Home from "../Pages/Home/Home";
-import News from "../Pages/News/News";
 import ServiceReadMore from "../Pages/Home/Service/ServiceReadMore";
 import Login from "../Pages/Login/Login";
 import Register from "../Pages/Register/Register";
 import PrivateRoutes from "./PrivateRoutes";
+import Blog from "../Pages/Blog/Blog";
+import Hardware from "../Pages/Hardware/Hardware";
 
 const router = createBrowserRouter([
   {
@@ -19,10 +20,18 @@ const router = createBrowserRouter([
         element: <Home></Home>,
       },
       {
-        path: "/news",
+        path: "/hardware",
         element: (
           <PrivateRoutes>
-            <News></News>
+            <Hardware></Hardware>
+          </PrivateRoutes>
+        ),
+      },
+      {
+        path: "/blog",
+        element: (
+          <PrivateRoutes>
+            <Blog></Blog>
           </PrivateRoutes>
         ),
       },

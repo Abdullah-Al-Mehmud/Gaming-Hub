@@ -12,8 +12,8 @@ const Faq = () => {
       </h1>
       <div className="md:flex items-center py-10 gap-10">
         {/* text */}
-        <div className="items-center ml-32  text-white">
-          <div className="collapse lg:w-[500px] collapse-arrow bg-base-200">
+        <div className="items-center lg:ml-32 md:px-0 px-5  text-white">
+          <div className="collapse md:w-[500px] collapse-arrow bg-base-200">
             <input type="radio" name="my-accordion-2" checked="checked" />
             <div className="collapse-title text-xl font-medium">
               What is the purpose of this gaming website?
@@ -26,7 +26,7 @@ const Faq = () => {
               </p>
             </div>
           </div>
-          <div className="collapse lg:w-[500px] collapse-arrow bg-base-200">
+          <div className="collapse md:w-[500px] collapse-arrow bg-base-200">
             <input type="radio" name="my-accordion-2" />
             <div className="collapse-title text-xl font-medium">
               Can I purchase tickets to gaming events through this website?
@@ -40,7 +40,7 @@ const Faq = () => {
               </p>
             </div>
           </div>
-          <div className="collapse lg:w-[500px] collapse-arrow bg-base-200">
+          <div className="collapse md:w-[500px] collapse-arrow  bg-base-200">
             <input type="radio" name="my-accordion-2" />
             <div className="collapse-title text-xl font-medium">
               How can I stay updated on event announcements and changes?
@@ -57,11 +57,7 @@ const Faq = () => {
         </div>
         {/* img */}
         <div>
-          <img
-            className="lg:w-[1000px] "
-            src="../../../../public/images/faq.png"
-            alt=""
-          />
+          <img className="md:w-[1000px] " src="/images/faq.png" alt="" />
         </div>
       </div>
     </div>

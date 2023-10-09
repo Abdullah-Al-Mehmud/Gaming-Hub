@@ -113,7 +113,7 @@ const Login = () => {
                 <div className="flex justify-center mt-4">
                   <img
                     onClick={handleGoogleLogIn}
-                    src="../../../public/images/google.png"
+                    src="/images/google.png"
                     className="w-10 cursor-pointer"></img>
                 </div>
               </form>

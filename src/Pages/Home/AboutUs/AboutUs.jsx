@@ -15,8 +15,8 @@ const AboutUs = () => {
         {/* img */}
         <div>
           <img
-            className="w-fit ml-20"
-            src="../../../../public/images/section2.jpg"
+            className="w-full md:ml-20 lg:px-0 px-5"
+            src="/images/section2.jpg"
             alt=""
           />
         </div>

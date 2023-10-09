@@ -9,11 +9,7 @@ const Footer = () => {
     <div data-aos="fade-up" className="bg-[#0b0114] py-16">
       <div>
         <div className="flex justify-center">
-          <img
-            className="w-14"
-            src="../../../public/images/arcade.png"
-            alt=""
-          />
+          <img className="w-14" src="/images/arcade.png" alt="" />
         </div>
         <p className="text-center font-bold px-5 mt-4 text-white">
           mmerse Yourself in the Ultimate Gaming Experience! Discover the latest

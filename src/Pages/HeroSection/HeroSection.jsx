@@ -2,9 +2,12 @@ import Navbar from "../Navbar/Navbar";
 
 const HeroSection = () => {
   return (
-    <div className="bg-[url('../../../public/images/combatBG.jpg')] h-screen bg-cover bg-no-repeat bg-top">
+    <div className="bg-[url('/images/combatBG.jpg')] h-screen bg-cover bg-no-repeat bg-top">
       <div className="bg-black bg-opacity-80 h-screen">
-        <Navbar></Navbar>
+        <div className="max-w-6xl mx-auto">
+          <Navbar></Navbar>
+        </div>
+
         <div className="text-center mt-24 pb-10">
           <div className="text-6xl font-bold text-white">
             <h1>Welcome to</h1>
