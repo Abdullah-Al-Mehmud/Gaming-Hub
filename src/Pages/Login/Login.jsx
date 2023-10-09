@@ -42,9 +42,11 @@ const Login = () => {
   return (
     <div className="bg-gray-900">
       <div className="">
-        <Navbar></Navbar>
+        <div className="md:mr-28">
+          <Navbar></Navbar>
+        </div>
 
-        <div>
+        <div className="py-20 md:px-0 px-10">
           <div className="hero min-h-screen ">
             <div className=" flex-shrink-0 w-full max-w-lg rounded-xl bg-base-100">
               <form onSubmit={handleLogIn} className="card-body  px-10">
@@ -80,9 +82,9 @@ const Login = () => {
                   />
                   <div onClick={() => setShow(!show)} className="absolute">
                     {show ? (
-                      <BiShowAlt className="absolute mt-[53px] ml-96"></BiShowAlt>
+                      <BiShowAlt className="absolute mt-[53px] md:ml-96 ml-72"></BiShowAlt>
                     ) : (
-                      <BiHide className="absolute mt-[53px] ml-96"></BiHide>
+                      <BiHide className="absolute mt-[53px] md:ml-96 ml-72"></BiHide>
                     )}
                   </div>
                   <label className="label">

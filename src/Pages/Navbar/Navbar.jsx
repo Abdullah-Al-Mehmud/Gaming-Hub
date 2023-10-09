@@ -43,7 +43,7 @@ const Navbar = () => {
   return (
     <div className="flex px-10 items-center pt-10">
       {/* logo */}
-      <img className="w-14 " src="./images/arcade.png" alt="" />
+      <img className="w-14 " src="/images/arcade.png" alt="" />
       {/* responsive */}
       <div className="navbar-start ml-5">
         <div className="dropdown">
@@ -71,7 +71,10 @@ const Navbar = () => {
       </div>
       {/* links */}
       <div className="flex items-center lg:gap-52">
-        <div className={` navbar-center text-lg font-bold  hidden lg:flex`}>
+        <div
+          className={` navbar-center text-lg font-bold  hidden lg:flex ${
+            user ? "mr-36" : "mr-0"
+          }`}>
           <ul className="flex gap-10 text-white">{links}</ul>
         </div>
 

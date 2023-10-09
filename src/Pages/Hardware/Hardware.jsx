@@ -3,7 +3,9 @@ import Navbar from "../Navbar/Navbar";
 const Hardware = () => {
   return (
     <div>
-      <Navbar></Navbar>
+      <div className="mr-28">
+        <Navbar></Navbar>
+      </div>
       <div>
         <div className="lg:px-16 px-5">
           {/* monitor */}
