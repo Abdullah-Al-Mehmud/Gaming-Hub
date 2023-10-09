@@ -40,9 +40,11 @@ const AuthProviders = ({ children }) => {
   };
 
   // update profile
-  const updateEmailProfile = (name) => {
+  const updateEmailProfile = (name, photo) => {
+    setLoading(true);
     return updateProfile(auth.currentUser, {
       displayName: name,
+      photoURL: photo,
     });
   };
 

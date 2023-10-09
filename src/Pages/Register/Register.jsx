@@ -10,15 +10,13 @@ const Register = () => {
   const [error, setError] = useState("");
   const navigate = useNavigate(null);
   const [show, setShow] = useState(false);
-  // const [name, setName] = useState("");
 
   const handleCreateUser = (e) => {
     e.preventDefault();
     const email = e.target.email.value;
     const password = e.target.password.value;
     const name = e.target.name.value;
-    // setName(name);
-    // console.log(email, password);
+    const photo = e.target.photo.value;
 
     if (!/[^a-zA-Z0-9]/.test(password)) {
       setError("Must Contain Special character ");
@@ -37,11 +35,7 @@ const Register = () => {
         console.log(result.user);
         Swal.fire("Registration Successful!", "success");
         e.target.reset();
-        updateEmailProfile(name)
-          .then(() => {
-            Swal.fire("Update Successful!", "success");
-          })
-          .catch();
+        updateEmailProfile(name, photo).then().catch();
 
         navigate("/");
       })
@@ -73,7 +67,18 @@ const Register = () => {
                     placeholder="Enter your Name"
                     className="input text-[#ff007f] input-bordered bg-base-200 border-none outline-none text-sm font-bold"
                     required
-                    name="text"
+                    name="name"
+                  />
+                  <label className="label">
+                    <span className="label-text mt-4 text-white font-bold">
+                      Your Picture URL
+                    </span>
+                  </label>
+                  <input
+                    type="text"
+                    placeholder="Enter your Picture URL"
+                    className="input text-[#ff007f] input-bordered bg-base-200 border-none outline-none text-sm font-bold"
+                    name="photo"
                   />
                   <label className="label">
                     <span className="label-text mt-4 text-white font-bold">
